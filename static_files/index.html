@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Message Board</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; max-width: 800px; margin: 24px; }
+    input, textarea { display: block; margin: 8px 0; padding: 8px; width: 100%; max-width: 400px }
+    button { padding: 8px 12px; margin: 6px 0 }
+    .hidden { display: none }
+    .info { color: green }
+    .error { color: red }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome to the Message Board</h1>
+
+  <!-- REGISTER section (shown first) -->
+  <div id="register-section">
+    <h2>Register</h2>
+    <div id="register-msg" class="info" aria-live="polite"></div>
+    <input type="text" id="register-username" placeholder="Choose a username" autocomplete="username">
+    <input type="password" id="register-password" placeholder="Choose a password" autocomplete="new-password">
+    <button id="register-btn">Register</button>
+  </div>
+
+  <!-- LOGIN section (hidden initially) -->
+  <div id="login-section" class="hidden">
+    <h2>Login</h2>
+    <div id="login-msg" class="info" aria-live="polite"></div>
+    <input type="text" id="login-username" placeholder="Username" autocomplete="username">
+    <input type="password" id="login-password" placeholder="Password" autocomplete="current-password">
+    <button id="login-btn">Login</button>
+    <button id="reset-btn" style="margin-left:8px">Reset account</button>
+  </div>
+
+  <!-- MESSAGE BOARD SECTION -->
+  <div id="board-section" class="hidden">
+    <h2>Message Board</h2>
+    <div id="messages"></div>
+
+    <textarea id="new-message" placeholder="Write your message here..."></textarea>
+    <button id="post-btn">Post Message</button>
+    <button id="logout-btn">Logout</button>
+  </div>
+
+  <script src= "script.js"></script>
+</body>
+</html>
