@@ -2,7 +2,7 @@
 
 A multi-threaded web server that hosts a Single Page Application (SPA) message board. The frontend communicates with the backend entirely through AJAX (XMLHttpRequest), allowing users to register, log in, and post messages without page refreshes.
 
-Features
+## Features
 
 Multi-threaded web server
 
@@ -20,7 +20,7 @@ Static file serving (HTML, JS, images)
 
 Graceful error handling
 
-Tech Stack
+## Tech Stack
 
 Backend: Custom multi-threaded web server
 
@@ -30,7 +30,7 @@ Communication: XMLHttpRequest (AJAX)
 
 Sessions: Cookies (HttpOnly, withCredentials)
 
-How It Works
+## How It Works
 
 / serves the main SPA (index.html)
 
