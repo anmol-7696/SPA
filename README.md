@@ -1,4 +1,4 @@
-SPA Message Board Web Server
+# SPA Message Board Web Server
 
 A multi-threaded web server that hosts a Single Page Application (SPA) message board. The frontend communicates with the backend entirely through AJAX (XMLHttpRequest), allowing users to register, log in, and post messages without page refreshes.
 
